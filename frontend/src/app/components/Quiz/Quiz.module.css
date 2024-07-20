@@ -1,0 +1,10 @@
+.app {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	text-align: center;
+}
+
+.loader {
+	padding-top: 50px;
+}

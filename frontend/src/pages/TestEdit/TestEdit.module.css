@@ -1,0 +1,16 @@
+.containerHeader {
+	display: flex;
+	flex-direction: column;
+	width: 620px;
+}
+
+.form {
+	padding: 10px;
+	margin: 20px 0;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}

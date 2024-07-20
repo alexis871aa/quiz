@@ -1,0 +1,16 @@
+.container {
+	width: 600px;
+	padding: 100px;
+}
+
+p {
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+.empty {
+	margin-top: 20px;
+	font-weight: bold;
+	color: #49b24d;
+	text-align: left;
+}

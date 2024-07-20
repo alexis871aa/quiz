@@ -1,0 +1,17 @@
+.container {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	width: 600px;
+	text-align: left;
+}
+
+.title {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 5px 0;
+}
+
+.buttons {
+	display: flex;
+}
