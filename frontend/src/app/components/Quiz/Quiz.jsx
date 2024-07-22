@@ -8,19 +8,23 @@ export const Quiz = () => {
 	const [tests, setTests] = useState([]);
 	const [isLoading, setIsLoading] = useState(true);
 
-	useEffect(async () => {
-		try {
-			const { data } = await request('/tests');
+	useEffect(() => {
+		const fetchTests = async () => {
+			try {
+				const { data } = await request('/tests');
 
-			setIsLoading(false);
-			setTests(data);
-		} catch (error) {
-			console.error(
-				'Ошибка получения тестов, сообщение от сервера: ',
-				error.message,
-			);
-			setIsLoading(false);
-		}
+				setIsLoading(false);
+				setTests(data);
+			} catch (error) {
+				console.error(
+					'Ошибка получения тестов, сообщение от сервера: ',
+					error.message,
+				);
+				setIsLoading(false);
+			}
+		};
+
+		fetchTests();
 	}, []);
 
 	const handleSaveTest = async (updatedTest) => {
