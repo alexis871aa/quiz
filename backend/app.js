@@ -1,6 +1,7 @@
 require('dotenv').config();
 
 const path = require('path');
+const cors = require('cors');
 const express = require('express');
 const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
@@ -8,6 +9,7 @@ const routes = require('./routes');
 
 const port = 3001;
 const app = express();
+app.use(cors());
 
 // app.use(express.static(path.resolve('..', 'frontend', 'build')));
 

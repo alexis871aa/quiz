@@ -3,12 +3,11 @@ import {
 	legacy_createStore as createStore,
 	applyMiddleware,
 } from 'redux';
-import { postReducer } from './reducers';
+import { testsReducer } from './reducers';
 import { thunk } from './middleware';
 
 const rootReducer = combineReducers({
-	post: postReducer,
-	// user: userReducer,
+	tests: testsReducer,
 });
 
 export const store = createStore(rootReducer, applyMiddleware(thunk));

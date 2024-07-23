@@ -1,1 +1,1 @@
-export * from './postReducer.js';
+export * from './testsReducer.js';
